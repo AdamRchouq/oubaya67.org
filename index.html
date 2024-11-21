@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>said-portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css ">
+       
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>Oubaya</span> 67</a>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+    
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <i id="btnmenu" class="fa-solid fa-bars"></i>
+        </nav>
+       </header>
+
+       <div class="hero-sec">
+        <div class="container">
+            <div class="div-text">
+                <h1>Said Oubaya</h1>
+                <span>Moroccan karate champion</span>
+                <p>I am Moroccan profetionel karate athlete in male categorie -67KG, i am 3 times african champion,vice world champion
+                    and grand winner for 2024,<br><span>if you need more information click on my social media links.</span>
+                </p>
+                <a href="#" class="btn">My Competitions</a>
+            </div>
+                <div class="div-img">
+                    <img src="said.png" alt="">
+                </div>
+        </div>
+       </div>
+
+       <script>
+            let btnmenu = document.getElementById("btnmenu");
+            let navlinks = document.querySelector(".links");
+
+            btnmenu.onclick = function (){
+                btnmenu.classList.toggle("fa-times")
+                navlinks.classList.toggle("active")
+                
+            }
+       </script>
+</body>
+</html>
